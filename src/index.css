@@ -1,13 +1,120 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  display: flex;
+  width: 100%;
 }
+
+.users_list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.users_list_h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 50px;
+  width: 500px;
+  background-color: #d6d6d6;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.users_list_item_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 50px;
+  width: 500px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.users_details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.users_details_h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 50px;
+  width: 500px;
+  background-color: #d6d6d6;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.users_details_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.users_details_item img {
+  margin-bottom: 15px;
+  border-radius: 100px;
+}
+
+.users_details_item h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.bio-card {
+  width: 300px;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-value {
+  width: 300px;
+}
+
+.pagination {
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+.users_list {
+  width: 100%;
+}
+
+.users_list_item_name {
+  width: 400px;
+}
+
+.users_details {
+  width: 100%;
+} 
